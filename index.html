@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Investment ✨</title>
+    <link rel="icon" type="image/png" href="assets/heart.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- PASSWORD SCREEN -->
+    <div id="passwordScreen" class="password-screen">
+      <div class="password-card">
+        <h2>🔒 Enter Access Key</h2>
+        <p class="hint">Hint: Our bank of love 💰💝</p>
+        <input
+          type="password"
+          id="passwordInput"
+          placeholder="Enter password..."
+        />
+        <button id="unlockBtn">Unlock</button>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT (HIDDEN UNTIL PASSWORD CORRECT) -->
+    <div id="mainContent" class="hidden">
+      <header>
+        <h1>💖 Our Love Investment 💖</h1>
+        <p class="tagline">
+          A record of every sweet thing we did for each other ❤️
+        </p>
+      </header>
+
+      <main>
+        <section class="investment">
+          <h2>Her Investments 💁‍♀️</h2>
+          <img src="assets/her.jpg" alt="Her photo" class="profile" />
+          <ul>
+            <li>₹500 — T-shirt (Harry Potter)</li>
+            <li>₹500 — T-shirt (Moon Hanging Astronaut)</li>
+            <li>₹300 — Google Pay (from Chirag)</li>
+            <li>₹299 — Keychain (Demon Slayer)</li>
+            <li>₹299 — Google Pay (from Aunty)</li>
+            <li>
+              ₹258 — Blinkit: Boyfriend Day Gift (Cadbury Chocolate, Octopus
+              Toy)
+            </li>
+            <li>
+              ₹279 — Blinkit: Maggi 12 Unit, Lays Cream & Onion, Maggi Masala
+            </li>
+            <li>₹212 — Blinkit: Lays ×4, Raffaello, Dairy Milk Fruit & Nut</li>
+            <li>₹200 — Google Pay (from Kinnari)</li>
+          </ul>
+          <p class="total">💰 Total: ₹2,847/-</p>
+        </section>
+
+        <section class="investment">
+          <h2>His Investments 🙋‍♂️</h2>
+          <img src="assets/me.jpg" alt="My photo" class="profile" />
+          <ul>
+            <li>₹66 — Airtel Recharge (₹33 × 2)</li>
+            <li>₹1,568 — Airtel Recharge (₹49 × 32)</li>
+            <li>₹1,043 — Pen Drive + Moon Lamp</li>
+            <li>₹40 — Google Pay (Fuse chocolate, cake)</li>
+            <li>₹50 — Google Pay (Sambar vada)</li>
+          </ul>
+          <p class="total">💰 Total: ₹2,767/-</p>
+        </section>
+
+        <section class="summary">
+          <h2>❤️ Our Total Love Value ❤️</h2>
+          <p id="grandTotal"></p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Made with 💘 by Us</p>
+        <p class="footer-date">Since 5 November 2024</p>
+        <button id="reopenBtn" class="reopen">🔓 Reopen Site</button>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

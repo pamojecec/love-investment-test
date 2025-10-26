@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Error — Incorrect Password</title>
+    <style>
+      :root {
+        --bg: #0f1724;
+        --card: #111827;
+        --accent: #ef4444;
+        --muted: #9ca3af;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+      }
+
+      body {
+        background: linear-gradient(180deg, #071024 0%, #0b1220 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        color: #eee;
+      }
+
+      .error-wrap {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.01)
+        );
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+        width: 380px;
+        max-width: 100%;
+        overflow: hidden;
+        text-align: center;
+        padding: 20px;
+        animation: pop 0.35s ease-out forwards;
+      }
+
+      .error-wrap img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .title {
+        font-size: 22px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 8px;
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .btn {
+        background: var(--accent);
+        color: white;
+        border: 0;
+        padding: 10px 16px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+      }
+
+      .btn:hover {
+        opacity: 0.9;
+      }
+
+      .forgot {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 10px;
+      }
+
+      @keyframes pop {
+        from {
+          transform: translateY(10px);
+          opacity: 0;
+        }
+        to {
+          transform: none;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="error-wrap" id="errorWindow" role="alert" aria-live="assertive">
+      <img src="assets/error.jpg" alt="Error illustration" />
+      <div class="title">Incorrect Password</div>
+      <div class="subtitle">
+        The password you entered is incorrect. Please try again.
+      </div>
+      <button class="btn" id="retryBtn">Retry</button>
+      <div class="forgot">Forgot Password?</div>
+    </div>
+
+    <script>
+      // Redirect user back to main page to re-enter password
+      document.getElementById("retryBtn").addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>

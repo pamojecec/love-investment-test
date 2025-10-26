@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom right, #ffd1dc, #fff5f7);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #555;
+  font-size: 1em;
+}
+
+section {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #d81b60;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 8px 0;
+  font-size: 1em;
+}
+
+.total {
+  font-weight: bold;
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+.profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border: 3px solid #e91e63;
+  color: #555;
+}
+
+.summary {
+  background: #f8bbd0;
+  font-size: 1.3em;
+}
+
+footer {
+  margin-top: 20px;
+  color: #555;
+}
+
+.footer-date {
+  font-size: 12px;
+  color: #777;
+  margin: 0;
+}
+
+/* UPDATE NEW*/
+
+.investment {
+  color: #555;
+}
+
+:root {
+  --bg: #0f1724;
+  --card: #111827;
+  --muted: #9ca3af;
+  --accent: #e91e63;
+}
+
+body {
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* ---------------- PASSWORD SCREEN ---------------- */
+.password-screen {
+  background-color: var(--bg);
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.password-card {
+  background: var(--card);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.password-card h2 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.password-card .hint {
+  color: var(--muted);
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.password-card input {
+  background: #1e293b;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.password-card button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.password-card button:hover {
+  opacity: 0.9;
+}
+
+/* Hide content until unlocked */
+.hidden {
+  display: none;
+}
+
+/* Reopen button */
+.reopen {
+  background: var(--card);
+  color: var(--muted);
+  border: 1px solid var(--muted);
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.reopen:hover {
+  color: white;
+  border-color: white;
+}
