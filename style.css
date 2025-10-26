@@ -87,10 +87,18 @@ footer {
   color: #555;
 }
 
+footer {
+  color: #555;
+}
+
 .footer-date {
   font-size: 12px;
   color: #777;
   margin: 0;
+}
+
+#grandTotal {
+  color: #555;
 }
 
 /* UPDATE NEW*/
